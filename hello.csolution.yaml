@@ -5,7 +5,7 @@ solution:
   packs:
     - pack: NXP::K32L3A60_DFP
     - pack: NXP::FRDM-K32L3A6_BSP
-    - pack: ARM::CMSIS
+    - pack: ARM::CMSIS@5.9.0
     - pack: ARM::CMSIS-Compiler@1.0.0
   target-types:
     - type: FRDM-K32L3A6

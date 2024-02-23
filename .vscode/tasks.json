@@ -16,10 +16,12 @@
 		},
 		{
 			"label": "Flash Device",
-			"type": "embedded-debug.flash",
-			"program": "${command:embedded-debug.getApplicationFile}",
+			"type": "arm-debugger.flash",
 			"serialNumber": "${command:device-manager.getSerialNumber}",
+			"program": "${command:arm-debugger.getApplicationFile}",
 			"cmsisPack": "${command:device-manager.getDevicePack}",
+			"deviceName": "${command:cmsis-csolution.getDeviceName}",
+			"processorName": "${command:cmsis-csolution.getProcessorName}",
 			"problemMatcher": [],
 			"dependsOn": "CMSIS Build"
 		}

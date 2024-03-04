@@ -9,7 +9,7 @@
             "deviceName": "${command:cmsis-csolution.getDeviceName}",
             "processorName": "${command:cmsis-csolution.getProcessorName}",
             "problemMatcher": [],
-            "label": "arm-debugger.flash: Flash Device"
+            "label": "Flash Device"
         }
     ]
 }

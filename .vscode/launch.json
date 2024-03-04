@@ -12,8 +12,7 @@
             "program": "${command:arm-debugger.getApplicationFile}",
             "cmsisPack": "${command:device-manager.getDevicePack}",
             "deviceName": "${command:cmsis-csolution.getDeviceName}",
-            "processorName": "${command:cmsis-csolution.getProcessorName}",
-            "debugFrom": "main"
+            "processorName": "${command:cmsis-csolution.getProcessorName}"
         }
     ]
 }

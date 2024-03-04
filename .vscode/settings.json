@@ -4,7 +4,7 @@
             "path": "hello.csolution.yaml",
             "target": "FRDM-K32L3A6",
             "config": {
-                "run": "Flash Device",
+                "run": "arm-debugger.flash: Flash Device",
                 "debug": "Arm Debugger"
             }
         }

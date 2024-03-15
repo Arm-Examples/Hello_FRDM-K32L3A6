@@ -10,7 +10,7 @@ solution:
   target-types:
     - type: FRDM-K32L3A6
       device: K32L3A60VPJ1A:cm4
-      board: FRDM-K32L3A6
+      board: NXP::FRDM-K32L3A6
       compiler: AC6
       add-path:
         - .

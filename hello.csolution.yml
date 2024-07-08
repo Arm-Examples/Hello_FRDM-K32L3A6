@@ -3,10 +3,11 @@ solution:
   created-for: CMSIS-Toolbox@2.0.0
   description: Simple hello world example.
   packs:
-    - pack: NXP::K32L3A60_DFP
-    - pack: NXP::FRDM-K32L3A6_BSP
-    - pack: ARM::CMSIS@5.9.0
-    - pack: ARM::CMSIS-Compiler@1.0.0
+    - pack: NXP::K32L3A60_DFP@18.0.0
+    - pack: NXP::FRDM-K32L3A6_BSP@18.0.0
+    - pack: ARM::CMSIS@6.1.0
+    - pack: ARM::CMSIS-Compiler@2.1.0
+    - pack: ARM::CMSIS-RTX@5.8.0
   target-types:
     - type: FRDM-K32L3A6
       device: K32L3A60VPJ1A:cm4
@@ -69,4 +70,4 @@ solution:
       optimize: size
       debug: off
   projects:
-    - project: hello.cproject.yaml
+    - project: ./hello.cproject.yml

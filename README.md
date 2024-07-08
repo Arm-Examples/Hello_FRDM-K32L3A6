@@ -56,6 +56,9 @@ cbuild hello.csolution.yml
 
 ## Debug the application
 
+Before starting to debug the application, make sure that you have gone through the steps as
+described in the [run the application](#run-the-application) section.
+
 ### Using Visual Studio Code with extensions
 
 Open the 'CMSIS' view from the side bar and press the 'Debug' button.

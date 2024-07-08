@@ -26,8 +26,6 @@ project:
     - component: CMSIS:CORE
     - component: CMSIS:RTOS2:Keil RTX5&Source
 
-    - component: CMSIS-Compiler:I/O:STDOUT&User
-
     - component: NXP::Device:CMSIS:K32L3A60_header
     - component: NXP::Device:CMSIS:K32L3A60_system
     - component: NXP::Device:SDK Drivers:clock
@@ -43,8 +41,8 @@ project:
     - component: NXP::Device:SDK Utilities:serial_manager
     - component: NXP::Device:SDK Utilities:serial_manager_uart
     - component: NXP::Device:Startup
-
-  output:
-    type:
-      - elf
-      - hex
+    - component: ARM::CMSIS:OS Tick:SysTick
+    - component: ARM::CMSIS-Compiler:CORE
+    - component: ARM::CMSIS-Compiler:STDOUT:Custom
+  packs:
+    - pack: ARM::CMSIS-Compiler@2.1.0

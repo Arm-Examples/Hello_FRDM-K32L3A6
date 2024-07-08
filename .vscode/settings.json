@@ -1,11 +1,11 @@
 {
     "cmsis-csolution.actions": [
         {
-            "path": "hello.csolution.yaml",
+            "path": "hello.csolution.yml",
             "target": "FRDM-K32L3A6",
             "config": {
-                "run": "Flash Device",
-                "debug": "Arm Debugger"
+                "debug": "Arm Debugger",
+                "run": "Flash Device"
             }
         }
     ]

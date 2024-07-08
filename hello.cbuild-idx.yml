@@ -1,0 +1,13 @@
+build-idx:
+  generated-by: csolution version 2.3.0
+  description: Simple hello world example.
+  csolution: hello.csolution.yml
+  cprojects:
+    - cproject: hello.cproject.yml
+  cbuilds:
+    - cbuild: hello.Debug+FRDM-K32L3A6.cbuild.yml
+      project: hello
+      configuration: .Debug+FRDM-K32L3A6
+    - cbuild: hello.Release+FRDM-K32L3A6.cbuild.yml
+      project: hello
+      configuration: .Release+FRDM-K32L3A6

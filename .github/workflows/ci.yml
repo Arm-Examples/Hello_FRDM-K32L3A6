@@ -26,7 +26,7 @@ jobs:
         name: Publish Project Action
         with:
           branch: ${{ github.branch || github.ref }}
-          project-file: ./hello.csolution.yaml
+          project-file: ./hello.csolution.yml
           dry-run: ${{ github.ref != 'refs/heads/main' }}
           PUBLISH_API_KEY: ${{ secrets.KEIL_API_TOKEN }}
           CMSIS_API_KEY: ${{ secrets.CMSIS_API_KEY }}

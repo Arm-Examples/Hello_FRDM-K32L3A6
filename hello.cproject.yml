@@ -49,8 +49,3 @@ project:
     - component: ARM::CMSIS:OS Tick:SysTick
     - component: ARM::CMSIS-Compiler:CORE
     - component: ARM::CMSIS-Compiler:STDOUT:Custom
-
-  output:
-    type:
-      - axf
-      - hex

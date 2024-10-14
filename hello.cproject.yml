@@ -31,21 +31,21 @@ project:
     - component: CMSIS:CORE
     - component: CMSIS:RTOS2:Keil RTX5&Source
 
-    - component: NXP::Device:CMSIS:K32L3A60_header
-    - component: NXP::Device:CMSIS:K32L3A60_system
-    - component: NXP::Device:SDK Drivers:clock
-    - component: NXP::Device:SDK Drivers:common
-    - component: NXP::Device:SDK Drivers:gpio
-    - component: NXP::Device:SDK Drivers:lists
-    - component: NXP::Device:SDK Drivers:lpuart
-    - component: NXP::Device:SDK Drivers:lpuart_adapter
-    - component: NXP::Device:SDK Drivers:msmc
-    - component: NXP::Device:SDK Drivers:port
-    - component: NXP::Device:SDK Utilities:assert
-    - component: NXP::Device:SDK Utilities:debug_console
-    - component: NXP::Device:SDK Utilities:serial_manager
-    - component: NXP::Device:SDK Utilities:serial_manager_uart
-    - component: NXP::Device:Startup
-    - component: ARM::CMSIS:OS Tick:SysTick
-    - component: ARM::CMSIS-Compiler:CORE
-    - component: ARM::CMSIS-Compiler:STDOUT:Custom
+    - component: Device:CMSIS:K32L3A60_header
+    - component: Device:CMSIS:K32L3A60_system
+    - component: Device:SDK Drivers:clock
+    - component: Device:SDK Drivers:common
+    - component: Device:SDK Drivers:gpio
+    - component: Device:SDK Drivers:lists
+    - component: Device:SDK Drivers:lpuart
+    - component: Device:SDK Drivers:lpuart_adapter
+    - component: Device:SDK Drivers:msmc
+    - component: Device:SDK Drivers:port
+    - component: Device:SDK Utilities:assert
+    - component: Device:SDK Utilities:debug_console
+    - component: Device:SDK Utilities:serial_manager
+    - component: Device:SDK Utilities:serial_manager_uart
+    - component: Device:Startup
+    - component: CMSIS:OS Tick:SysTick
+    - component: CMSIS-Compiler:CORE
+    - component: CMSIS-Compiler:STDOUT:Custom

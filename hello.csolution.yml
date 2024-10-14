@@ -1,8 +1,9 @@
 solution:
   description: Simple hello world example
-  created-for: CMSIS-Toolbox@2.5.0
+  created-for: CMSIS-Toolbox@2.4.0
   compiler: AC6
- 
+  cdefault: ./cdefault.yml
+
   packs:
     - pack: ARM::CMSIS
     - pack: ARM::CMSIS-Compiler

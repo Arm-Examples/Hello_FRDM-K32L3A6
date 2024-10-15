@@ -4,7 +4,7 @@ default:
     - for-compiler: AC6
 
       C-CPP:
-        - -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb
+        - -fno-common -fdata-sections -ffreestanding -fno-builtin -mthumb
         - -fno-rtti
         - -funsigned-char
         - -fshort-enums
@@ -36,7 +36,8 @@ default:
         - --info unused
         - --info veneers
         - --list
-        - --remove --entry=Reset_Handler
+        - --remove 
+        - --entry=Reset_Handler
         - --strict
         - --diag_suppress 6314
         - --summary_stderr

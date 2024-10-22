@@ -1,20 +1,21 @@
 solution:
-  created-by: uv2csolution@0.0.9
-  created-for: CMSIS-Toolbox@2.0.0
-  description: Simple hello world example.
+  description: Simple hello world example
+  created-for: CMSIS-Toolbox@2.6.0
+  compiler: AC6
+  cdefault: 
+
   packs:
+    - pack: ARM::CMSIS
+    - pack: ARM::CMSIS-Compiler
+    - pack: ARM::CMSIS-RTX
     - pack: NXP::K32L3A60_DFP@18.0.0
     - pack: NXP::FRDM-K32L3A6_BSP@18.0.0
-    - pack: ARM::CMSIS@6.1.0
-    - pack: ARM::CMSIS-Compiler@2.1.0
-    - pack: ARM::CMSIS-RTX@5.8.0
+
   target-types:
     - type: FRDM-K32L3A6
       device: K32L3A60VPJ1A:cm4
       board: NXP::FRDM-K32L3A6
-      compiler: AC6
-      add-path:
-        - .
+
       define:
         - DEBUG
         - CPU_K32L3A60VPJ1A_cm4
@@ -23,51 +24,14 @@ solution:
         - PRINTF_ADVANCED_ENABLE: "0"
         - SCANF_ADVANCED_ENABLE: "0"
         - MCUXPRESSO_SDK
-      misc:
-        - C-CPP:
-            - -fno-common  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb
-            - -fno-rtti
-            - -funsigned-char
-            - -fshort-enums
-            - -fshort-wchar
-            - -ffunction-sections
-            - -std=c99
-            - -Wno-packed
-            - -Wno-missing-variable-declarations
-            - -Wno-missing-prototypes
-            - -Wno-missing-noreturn
-            - -Wno-sign-conversion
-            - -Wno-nonportable-include-path
-            - -Wno-reserved-id-macro
-            - -Wno-unused-macros
-            - -Wno-documentation-unknown-command
-            - -Wno-documentation
-            - -Wno-license-management
-            - -Wno-parentheses-equality
-          ASM:
-            - -masm=auto
-          Link:
-            - --map
-            - --load_addr_map_info
-            - --xref
-            - --callgraph
-            - --symbols
-            - --info sizes
-            - --info totals
-            - --info unused
-            - --info veneers
-            - --list
-            - --remove --entry=Reset_Handler
-            - --strict
-            - --diag_suppress 6314
-            - --summary_stderr
-            - --info summarysizes
+
   build-types:
     - type: Debug
-      optimize: none
+      optimize: debug
       debug: on
     - type: Release
       optimize: size
       debug: off
+
   projects:
     - project: ./hello.cproject.yml

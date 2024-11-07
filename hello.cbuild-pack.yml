@@ -11,7 +11,9 @@ cbuild-pack:
         - ARM::CMSIS-RTX
     - resolved-pack: NXP::FRDM-K32L3A6_BSP@18.0.0
       selected-by-pack:
+        - NXP::FRDM-K32L3A6_BSP
         - NXP::FRDM-K32L3A6_BSP@18.0.0
     - resolved-pack: NXP::K32L3A60_DFP@18.0.0
       selected-by-pack:
+        - NXP::K32L3A60_DFP
         - NXP::K32L3A60_DFP@18.0.0

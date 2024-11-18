@@ -1,16 +1,23 @@
+# A solution is a collection of related projects that share same base configuration.
 solution:
   description: Simple hello world example
   created-for: CMSIS-Toolbox@2.6.0
-  compiler: AC6
-  cdefault: 
+  cdefault:
 
+  # List of tested compilers that can be selected
+  select-compiler:
+    - compiler: AC6
+  compiler: AC6
+
+  # List the packs that define the device and/or board.
   packs:
     - pack: ARM::CMSIS
     - pack: ARM::CMSIS-Compiler
     - pack: ARM::CMSIS-RTX
-    - pack: NXP::K32L3A60_DFP@18.0.0
-    - pack: NXP::FRDM-K32L3A6_BSP@18.0.0
+    - pack: NXP::K32L3A60_DFP
+    - pack: NXP::FRDM-K32L3A6_BSP
 
+  # List different hardware targets that are used to deploy the solution.
   target-types:
     - type: FRDM-K32L3A6
       device: K32L3A60VPJ1A:cm4
@@ -25,6 +32,7 @@ solution:
         - SCANF_ADVANCED_ENABLE: "0"
         - MCUXPRESSO_SDK
 
+  # List of different build configurations.
   build-types:
     - type: Debug
       optimize: debug
@@ -33,5 +41,6 @@ solution:
       optimize: size
       debug: off
 
+  # List related projects.
   projects:
     - project: ./hello.cproject.yml

@@ -12,7 +12,12 @@ cbuild-run:
     - file: out/hello/FRDM-K32L3A6/Debug/hello.axf
       info: generate by hello.Debug+FRDM-K32L3A6
       type: elf
-      load: image+symbols
+      load: symbols
+      pname: cm4
+    - file: out/hello/FRDM-K32L3A6/Debug/hello.hex
+      info: generate by hello.Debug+FRDM-K32L3A6
+      type: hex
+      load: image
       pname: cm4
   system-resources:
     memory:

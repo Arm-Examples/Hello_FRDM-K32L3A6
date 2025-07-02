@@ -50,6 +50,15 @@ solution:
       optimize: size
       debug: off
 
+  misc:
+    - for-compiler: AC6
+      C-CPP:
+        - -gdwarf-5
+      ASM:
+        - -gdwarf-5
+      Link:
+        - --entry=Reset_Handler
+
   # List related projects.
   projects:
     - project: ./hello.cproject.yml

@@ -62,3 +62,9 @@ project:
     - pack: ARM::CMSIS-RTX
     - pack: NXP::FRDM-K32L3A6_BSP
     - pack: NXP::K32L3A60_DFP
+
+  output:
+    type:
+    - elf
+    - hex
+    - map

@@ -25,6 +25,8 @@ project:
     - component: CMSIS:OS Tick:SysTick
     - component: CMSIS-Compiler:CORE
     - component: CMSIS-Compiler:STDOUT:Custom
+    - component: NXP::Device:SDK Utilities:str
+    - component: NXP::Device:SDK Utilities:debug console template config
 
   # List of source groups and files added to a project or a layer.
   groups:
@@ -54,5 +56,9 @@ project:
   linker:
     - script: ./K32L3A60xxx_cm4_flash.scf
       for-compiler: AC6
-
-
+  packs:
+    - pack: ARM::CMSIS
+    - pack: ARM::CMSIS-Compiler
+    - pack: ARM::CMSIS-RTX
+    - pack: NXP::FRDM-K32L3A6_BSP
+    - pack: NXP::K32L3A60_DFP

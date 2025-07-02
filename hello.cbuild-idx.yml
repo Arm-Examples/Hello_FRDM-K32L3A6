@@ -1,0 +1,17 @@
+build-idx:
+  generated-by: csolution version 2.10.0
+  description: Simple hello world example
+  cdefault: cdefault.yml
+  csolution: hello.csolution.yml
+  tmpdir: tmp
+  cprojects:
+    - cproject: hello.cproject.yml
+  cbuilds:
+    - cbuild: hello.Debug+FRDM-K32L3A6.cbuild.yml
+      project: hello
+      configuration: .Debug+FRDM-K32L3A6
+      messages:
+        info:
+          - hello.cbuild-pack.yml - file is already up-to-date
+          - hello+FRDM-K32L3A6.cbuild-run.yml - file is already up-to-date
+          - hello.Debug+FRDM-K32L3A6.cbuild.yml - file is already up-to-date

@@ -31,6 +31,15 @@ solution:
         - PRINTF_ADVANCED_ENABLE: "0"
         - SCANF_ADVANCED_ENABLE: "0"
         - MCUXPRESSO_SDK
+      target-set:
+        - set:
+          images:
+            - project-context: hello.Debug
+          debugger:
+            name: CMSIS-DAP@pyOCD
+            port: 3333
+            protocol: swd
+            clock: 10000000
 
   # List of different build configurations.
   build-types:

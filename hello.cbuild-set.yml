@@ -1,4 +1,4 @@
 cbuild-set:
-  generated-by: csolution version 2.6.0
+  generated-by: vscode-cmsis-csolution version 1.54.1-197-gaf059c8
   contexts:
-    - context: hello.Release+FRDM-K32L3A6
+    - context: hello.Debug+FRDM-K32L3A6

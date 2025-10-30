@@ -21,14 +21,17 @@
 #include "cmsis_os2.h"
 #include "fsl_debug_console.h"
 
+// Create thread attribute to show thread name in the XRTOS viewer:
+const osThreadAttr_t app_main_attr = {.name = "MainThread"};
+
 /*-----------------------------------------------------------------------------
  * Application main thread
  *----------------------------------------------------------------------------*/
-static void app_main_thread (void *argument) {
+static void app_main_thread(void *argument) {
   (void)argument;
 
-  for(int count = 0; count < 10; count++) {
-    PRINTF("Hello World %d\r\n", count);
+  for (int count = 0; count < 10; count++) {
+    printf("Hello World %d\r\n", count);
     osDelay(1000U);
   }
   osDelay(osWaitForever);
@@ -37,9 +40,12 @@ static void app_main_thread (void *argument) {
 /*-----------------------------------------------------------------------------
  * Application initialization
  *----------------------------------------------------------------------------*/
-int app_main (void) {
-  osKernelInitialize();                         /* Initialize CMSIS-RTOS2 */
-  osThreadNew(app_main_thread, NULL, NULL);
-  osKernelStart();                              /* Start thread execution */
+int app_main(void) {
+  // Initialize CMSIS-RTOS2:
+  osKernelInitialize();
+  // Create named application main thread:
+  osThreadNew(app_main_thread, NULL, &app_main_attr);
+  // Start thread execution:
+  osKernelStart();
   return 0;
 }

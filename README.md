@@ -1,20 +1,21 @@
-[![License](https://img.shields.io/github/license/Arm-Examples/Hello_FRDM-K32L3A6?label)](https://github.com/Arm-Examples/Hello_FRDM-K32L3A6/blob/main/LICENSE)
-[![Build and Execution Test](https://img.shields.io/github/actions/workflow/status/Arm-Examples/Hello_FRDM-K32L3A6/build.yml?logo=arm&logoColor=0091bd&label=Build%20and%20Execution%20Test)](https://github.com/Arm-Examples/Hello_FRDM-K32L3A6/tree/main/.github/workflows/build.yml)
+[![License Apache--2.0](https://img.shields.io/badge/License-Apache--2.0-green?label=License)](https://github.com/Arm-Examples/Hello_FRDM-K32L3A6/blob/main/LICENSE)
+[![Build and Execution Test](https://img.shields.io/github/actions/workflow/status/Arm-Examples/Hello_FRDM-K32L3A6/build.yml?logo=arm&logoColor=0091bd&label=Build%20and%20Execution%20Test)](./.github/workflows/build.yml)
+[![Example workflow](https://img.shields.io/github/actions/workflow/status/Arm-Examples/Hello_FRDM-K32L3A6/ci.yml?logo=arm&logoColor=0091bd&label=Example%20Publishing)](https://www.keil.arm.com/) 
+[![CMSIS Compliance](https://img.shields.io/github/actions/workflow/status/Arm-Examples/Hello_FRDM-K32L3A6/verify.yml?logo=arm&logoColor=0091bd&label=CMSIS%20Compliance)](https://www.keil.arm.com/cmsis)
+[![Keil Studio Cloud - Import Project](https://img.shields.io/badge/Keil_Studio_Cloud-Import_Project-0091bd?logo=arm&logoColor=0091bd)](https://studio.keil.arm.com/?import=https://github.com/Arm-Examples/Hello_FRDM-K32L3A6.git)
+
 
 # Hello example for FRDM-K32L36
 
 Simple Hello World example for NXP [FRDM-K32L36](https://www.nxp.com/design/development-boards/freedom-development-boards/mcu-boards/nxp-freedom-development-platform-for-k32-l3-mcus:FRDM-K32L3A6) Evaluation Kit.
 This example prints "Hello World" and a counter value via the standard output which is routed to the debug console through Virtual COM port.
 
-[![Keil Studio Cloud - Import Project](https://img.shields.io/badge/Keil_Studio_Cloud-Import_Project-0091bd?logo=arm&logoColor=0091bd)](https://studio.keil.arm.com/?import=https://github.com/Arm-Examples/Hello_FRDM-K32L3A6.git)
-[![example workflow](https://img.shields.io/github/actions/workflow/status/Arm-Examples/Hello_FRDM-K32L3A6/ci.yml?logo=arm&logoColor=0091bd&label=Example%20Publishing)](https://www.keil.arm.com/) 
-[![CMSIS Compliance](https://img.shields.io/github/actions/workflow/status/Arm-Examples/Hello_FRDM-K32L3A6/verify.yml?logo=arm&logoColor=0091bd&label=CMSIS%20Compliance)](https://www.keil.arm.com/cmsis)
 
 ## Prerequisites
 
 ### Tools
 
-- [CMSIS-Toolbox v2.10.0](https://github.com/Open-CMSIS-Pack/cmsis-toolbox/releases) or newer
+- [CMSIS-Toolbox v2.13.0](https://github.com/Open-CMSIS-Pack/cmsis-toolbox/releases) or newer
 - [Microsoft Visual Studio Code](https://code.visualstudio.com/download) with Keil Studio Pack extension (optional, alternatively CLI can be used)
 - [Arm Compiler 6](https://developer.arm.com/Tools%20and%20Software/Arm%20Compiler%20for%20Embedded) (automatically installed when using Visual Studio Code with vcpkg)
 
